@@ -1,0 +1,22 @@
+{
+  "name": "nuvio-plus",
+  "version": "0.1.0",
+  "description": "Performance-focused Stremio addon + companion streaming toolkit",
+  "main": "addon/index.js",
+  "scripts": {
+    "start": "node addon/index.js",
+    "server": "node server/proxyServer.js",
+    "dev": "concurrently \"npm:start\" \"npm:server\""
+  },
+  "dependencies": {
+    "stremio-addon-sdk": "^1.6.10",
+    "express": "^4.19.2",
+    "ws": "^8.17.0",
+    "node-fetch": "^2.7.0",
+    "lru-cache": "^10.2.0",
+    "ffmpeg-static": "^5.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
